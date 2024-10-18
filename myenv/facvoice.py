@@ -133,7 +133,7 @@ def main():
         generate_invoice(client_name, amount, items)
     else:
         speak("I'm sorry, I can only help you with creating invoices right now.")
-    model_path = "/home/joyboy/invoiceassitance/myenv/vosk-model-small-en-us-0.15"  # Your model path
+    model_path = "/home/joyboy/invoiceassitance/myenv/vosk-model-small-en-us-0.15"  
     recognizer = VoskRecognizer(model_path)
 
     speak("Hello! What would you like to do today?")
