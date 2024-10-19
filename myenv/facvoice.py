@@ -170,10 +170,8 @@ def main():
                         break
 
                     items.append(item)
-                    # Confirm each item
                     speak(f"You added {item}. Say another item or 'done' if you are finished.")
 
-                # Generate the invoice after all items are collected
                 generate_invoice(client_name, amount, items)
             else:
                 speak("Let's try again. What is the amount?")
